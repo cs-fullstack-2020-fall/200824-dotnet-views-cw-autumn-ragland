@@ -1,0 +1,7 @@
+<h1>View All Dogs</h1>
+@foreach (DogObject dog in @ViewData["dogList"] as List<DogObject>)
+{
+    <h3>Name : @dog.name</h3>
+    <h3>Breed : @dog.breed</h3>
+    <h3>Age : @dog.age</h3>
+}

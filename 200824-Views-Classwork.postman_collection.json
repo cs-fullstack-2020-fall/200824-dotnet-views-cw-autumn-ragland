@@ -1,0 +1,204 @@
+{
+	"info": {
+		"_postman_id": "3297bcbb-f560-474a-9bfc-4a15c9988b3c",
+		"name": "200824-Views-Classwork",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Landing",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:5001",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001"
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "View All Dogs",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:5001/Dog/ViewAll",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"Dog",
+						"ViewAll"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "View All Cats",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:5001/Cat/ViewAll",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"Cat",
+						"ViewAll"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "View One Cat",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:5001/Cat/ViewOne?catName=Eddy",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"Cat",
+						"ViewOne"
+					],
+					"query": [
+						{
+							"key": "catName",
+							"value": "Eddy"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "View One Dog",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:5001/Dog/ViewOne?dogName=Dakota",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"Dog",
+						"ViewOne"
+					],
+					"query": [
+						{
+							"key": "dogName",
+							"value": "Dakota"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create One Dog",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "Tippy",
+							"type": "text"
+						},
+						{
+							"key": "age",
+							"value": "7",
+							"type": "text"
+						},
+						{
+							"key": "breed",
+							"value": "Mutt",
+							"type": "text"
+						}
+					],
+					"options": {
+						"urlencoded": {}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:5001/Dog/CreateOne",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"Dog",
+						"CreateOne"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create one Cat",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "Fluffer",
+							"type": "text"
+						},
+						{
+							"key": "age",
+							"value": "6",
+							"type": "text"
+						},
+						{
+							"key": "breed",
+							"value": "Cutie",
+							"type": "text"
+						}
+					],
+					"options": {
+						"urlencoded": {}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:5001/Cat/CreateOne",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"Cat",
+						"CreateOne"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
